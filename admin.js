@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         tableBody.innerHTML = ''; // Kosongkan tabel
         
         // Ambil data dari server backend
-        fetch('http://localhost:3000/api/results')
+        fetch('https://cbt.up.railway.app/api/results')
         .then(response => response.json())
         .then(results => {
             if (results.length === 0) {
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         tableBody.innerHTML = ''; // Kosongkan tabel
         
         // Ambil data dari server backend
-        fetch('http://localhost:3000/api/results')
+        fetch('https://cbt.up.railway.app/api/results')
         .then(response => response.json())
         .then(results => {
             if (results.length === 0) {

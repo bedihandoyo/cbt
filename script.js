@@ -144,7 +144,7 @@ function submitQuiz() {
     };
 
     // Kirim data ke server backend
-    fetch('http://localhost:3000/api/save-result', {
+    fetch('https://cbt.up.railway.app/api/save-result', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -327,7 +327,7 @@ function submitQuiz() {
     };
 
     // Kirim data ke server backend
-    fetch('http://localhost:3000/api/save-result', {
+    fetch('https://cbt.up.railway.app/api/save-result', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
