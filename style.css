@@ -1,0 +1,434 @@
+<<<<<<< HEAD
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    
+    background-image: url('https://i.ibb.co.com/6Rr2b9d7/gambar1.jpg'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Lapisan transparan di atas gambar latar belakang */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Gaya untuk Header */
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.running-text-container {
+    background-color: #333;
+    padding: 5px 0;
+    margin-top: px;
+    border-radius: 40px; /* Properti untuk menumpulkan sudut */
+    width: 60%;
+    margin: 3px auto 0;
+}
+
+marquee {
+    color: white;
+    font-size: 14px;
+}
+
+/* Gaya untuk Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer p {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.time-box {
+    background-color: #ffc107;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Gaya untuk Halaman Login */
+#login-screen h2, .admin-container h2 {
+    color: #004d99;
+}
+
+#login-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Gaya untuk Tombol */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Gaya untuk Halaman Ujian */
+#quiz-screen h2 {
+    margin-top: 0;
+}
+
+.header-quiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#info-peserta {
+    text-align: left;
+}
+
+#info-peserta p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.option-button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.option-button:hover {
+    background-color: #e2e2e2;
+}
+
+.option-button.selected {
+    background-color: #d1e7ff;
+    border-color: #007bff;
+    color: #000;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Gaya untuk Halaman Hasil */
+#result-screen h1 {
+    color: #28a745;
+}
+
+/* Gaya untuk Halaman Admin */
+.admin-container {
+    margin-top: 100px;
+    text-align: left;
+}
+
+#results-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#results-table th {
+    background-color: #e2e2e2;
+=======
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    
+    background-image: url('https://i.ibb.co.com/6Rr2b9d7/gambar1.jpg'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Lapisan transparan di atas gambar latar belakang */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Gaya untuk Header */
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.running-text-container {
+    background-color: #333;
+    padding: 5px 0;
+    margin-top: px;
+    border-radius: 40px; /* Properti untuk menumpulkan sudut */
+    width: 60%;
+    margin: 3px auto 0;
+}
+
+marquee {
+    color: white;
+    font-size: 14px;
+}
+
+/* Gaya untuk Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer p {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.time-box {
+    background-color: #ffc107;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Gaya untuk Halaman Login */
+#login-screen h2, .admin-container h2 {
+    color: #004d99;
+}
+
+#login-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Gaya untuk Tombol */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Gaya untuk Halaman Ujian */
+#quiz-screen h2 {
+    margin-top: 0;
+}
+
+.header-quiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#info-peserta {
+    text-align: left;
+}
+
+#info-peserta p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.option-button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.option-button:hover {
+    background-color: #e2e2e2;
+}
+
+.option-button.selected {
+    background-color: #d1e7ff;
+    border-color: #007bff;
+    color: #000;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Gaya untuk Halaman Hasil */
+#result-screen h1 {
+    color: #28a745;
+}
+
+/* Gaya untuk Halaman Admin */
+.admin-container {
+    margin-top: 100px;
+    text-align: left;
+}
+
+#results-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#results-table th {
+    background-color: #e2e2e2;
+>>>>>>> c51e1214e355fddba517eeceb64325193e821bd0
+}
